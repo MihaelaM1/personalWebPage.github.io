@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url("images/1082.jpg") no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+header img {
+    width: 150px;
+}
+header nav {
+    display: flex;
+    gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav a  {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border: 2px solid ;
+    background: linear-gradient(45deg, #f14c63, #ec63be);
+    border-radius: 5px;
+    cursor: pointer;
+}
+header nav a:hover , .active{
+    border: 2px solid #b21327;
+    border-radius: 5px;
+    background: linear-gradient(20deg, #ea77c1, #9d16a1);
+}
+section{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 160px 80px;
+}
+section img {
+    width: 650px;
+    border-radius: 80px;
+}
+section .content h1 {
+    font-size: 80px;
+    width: 50%;
+    text-transform: uppercase;
+    color: #160d6f;
+}
+section .content p {
+    width: 70%;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #140b83;
+}
+ section .content h3{
+    font-family: sans-serif;
+    font-weight: 320;
+    margin-block: 24px;
+    text-transform: capitalize;
+    color: #d70f28;
+}
+.icon{
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    bottom: 32px;
+    right: 6%;
+}
+.icon ion-icon{
+    background: #d42c42;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+.icon ion-icon:hover{
+    background: #fff;
+    color: #d42c42;
+}
